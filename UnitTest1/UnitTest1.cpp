@@ -6,15 +6,16 @@ using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace UnitTest1
 {
-	TEST_CLASS(UnitTest1)
-	{
-	public:
+    TEST_CLASS(UnitTest1)
+    {
+    public:
 
-		TEST_METHOD(TestMethod1)
-		{
-			int x = 4;
-			int test = p(x);
-			Assert::AreEqual(test, -55, 0.0001);
-		}
-	};
+        TEST_METHOD(TestMethod1)
+        {
+            int x = 4;
+            int test = p(x);
+
+            Assert::AreEqual(test, -55, 0.0001); 
+        }
+    };
 }
